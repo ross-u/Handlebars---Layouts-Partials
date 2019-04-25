@@ -9,13 +9,12 @@ const players = require('./playersData');
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 
+// SET THE STATIC FOLDER FOR PUBLIC FILES
 app.use(express.static(__dirname + '/public'));
-
 
 
 // REGISTER THE PARTIAL 
 hbs.registerPartials(__dirname + '/views/partials');
-
 
 
 // ROUTES
